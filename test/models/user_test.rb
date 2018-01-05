@@ -82,8 +82,6 @@ class UserTest < ActiveSupport::TestCase
     assert_difference 'Micropost.count', -1 do
       @user.destroy
     end
-    puts Micropost.first.created_at
-    puts Micropost.last.created_at
   end
 
 end
